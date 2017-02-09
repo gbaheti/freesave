@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js index">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Spars">
+    <meta name="description" content="Save money digitally">
+    <title>Spars</title>
+    <!-- <link rel="icon" type="image/png" href="images/profile4.png"> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Rubik:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <meta property="og:site_name" content="Spars" />
+    <meta property="og:title" content="StockLo" />
+    <meta property="og:url" content="http://spars.in/" />
+    <meta property="og:type" content="website" />
+    <meta itemprop="name" content="Spars" />
+    <meta itemprop="url" content="http://spars.in/" />
+    <meta name="twitter:title" content="StockLo" />
+    <meta name="twitter:url" content="http://spars.in/" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!--[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <h1>spars</h1>
+            <p>Invest within seconds.</p>
+
+            <div class="content">
+                <h1>Safe 9% returns on your savings.</h1>
+                <p>A cup of starbucks coffee <img src="images/coffee.svg" alt=""> saved everyday becomes &#8377;4,61,321 in 5 years. <img src="images/rupee.svg" alt=""></p>
+            </div>
+
+            <div class="question">
+                Dream big. Start small. Act now.
+            </div>
+
+            <form id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate email-form" target="_blank" novalidate>
+                <div class="mc-field-group">
+                    <input type="email" value="" name="EMAIL" class="input-text required email" id="mce-EMAIL" placeholder="your@email.com">
+                </div>
+                <div id="mce-responses" class="clear" style="display: none;">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>
+                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <input type="text" name="b_5b486ff30b72a43d5b20eeb42_4bcdb4e667" tabindex="-1" value="">
+                </div>
+                <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="submit-btn"><img src="images/ripple.svg" alt=""><span>Request beta access</span></button>
+            </form>
+
+            <a href="#" class="email-link">hello@spars.in</a>
+        </div>
+        <div class="background">
+            <div class="gradient"></div>
+            <div class="lights"></div>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/jquery.ajaxchimp.js"></script>
+    <script>
+        $(document).ready(function() {
+            var form = $('#mc-embedded-subscribe-form');
+            var button = $('.submit-btn');
+            $('#mc-embedded-subscribe-form').ajaxChimp({
+                url: 'http://readef.us11.list-manage.com/subscribe/post?u=5b486ff30b72a43d5b20eeb42&amp;id=4bcdb4e667',
+                callback: function(data) {
+                    if (data.result != "success") {
+                        $(form).addClass('error');
+                        $(button).removeClass('success');
+                        $(button).attr('disabled');
+                        button.removeClass("loading");
+                    } else {
+                        $(form).removeClass('error');
+                        $(button).addClass('success');
+                        $(button).text("Check your email!");
+                        button.removeClass("loading");
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

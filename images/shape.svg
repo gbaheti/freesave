@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="383px" height="55px" viewBox="0 0 383 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="328" y="0" width="52" height="19" rx="9.5"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="52" height="19" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="dash2" transform="translate(-544.000000, -276.000000)">
+            <g id="Group" transform="translate(215.000000, 209.000000)">
+                <g id="Group-3" transform="translate(332.000000, 70.000000)">
+                    <path d="M0.5,0.5 L15.5,15.5" id="Line" stroke="#DFFFBB" stroke-width="7" stroke-linecap="round"></path>
+                    <circle id="Oval" fill="#FFF9CF" cx="180" cy="38" r="14"></circle>
+                    <use id="Rectangle" stroke="#D9D0FF" mask="url(#mask-2)" stroke-width="10" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
