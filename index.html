@@ -5,20 +5,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Spars">
-    <meta name="description" content="Save money digitally">
+    <meta name="description" content="Invest money within seconds.">
     <title>Spars</title>
-    <!-- <link rel="icon" type="image/png" href="images/profile4.png"> -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Rubik:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
     <meta property="og:site_name" content="Spars" />
-    <meta property="og:title" content="StockLo" />
+    <meta property="og:title" content="Spars" />
     <meta property="og:url" content="http://spars.in/" />
     <meta property="og:type" content="website" />
     <meta itemprop="name" content="Spars" />
     <meta itemprop="url" content="http://spars.in/" />
-    <meta name="twitter:title" content="StockLo" />
+    <meta name="twitter:title" content="Spars" />
     <meta name="twitter:url" content="http://spars.in/" />
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="Invest money within seconds." />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <!--[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -28,11 +28,11 @@
     <div class="container">
         <div class="main">
             <h1>spars</h1>
-            <p>Invest within seconds.</p>
+            <p>Invest money within seconds.</p>
 
             <div class="content">
                 <h1>Safe 9% returns on your savings.</h1>
-                <p>A cup of starbucks coffee <img src="images/coffee.svg" alt=""> saved everyday becomes &#8377;4,61,321 in 5 years. <img src="images/rupee.svg" alt=""></p>
+                <p>A cup of starbucks coffee <img src="images/coffee.svg" alt=""> saved everyday becomes &#8377;4,61,<span class="counter" data-count="999">0</span> in 5 years. <img src="images/rupee.svg" alt=""></p>
             </div>
 
             <div class="question">
@@ -65,6 +65,33 @@
     <script src="js/jquery.ajaxchimp.js"></script>
     <script>
         $(document).ready(function() {
+            $('.counter').each(function() {
+                var $this = $(this),
+                    countTo = $this.attr('data-count');
+
+                $({
+                    countNum: 321
+                }).animate({
+                        countNum: countTo
+                    },
+
+                    {
+
+                        duration: 1200000,
+                        easing: 'linear',
+                        step: function() {
+                            $this.text(Math.floor(this.countNum));
+                        },
+                        complete: function() {
+                            $this.text(this.countNum);
+                            //alert('finished');
+                        }
+
+                    });
+
+
+
+            });
             var form = $('#mc-embedded-subscribe-form');
             var button = $('.submit-btn');
             $('#mc-embedded-subscribe-form').ajaxChimp({
