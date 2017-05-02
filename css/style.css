@@ -369,8 +369,10 @@ button.submit-btn img {
 }
 
 .question {
-    font-size: 18px;
+    font-size: 32px;
     color: white;
+    font-family: Rubik, sans-serif;
+    margin: 60px 20px 80px;
 }
 
 a.email-link {
